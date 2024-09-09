@@ -9,23 +9,31 @@
             Padding="30,0"
             VerticalOptions="Center">
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
-
             <Label
-                Text="Hello, World!"
+                Text="Currently available daily budget:"
                 SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
+                FontSize="28"
                 HorizontalOptions="Center" />
 
             <Label
-                Text="Welcome to .NET Multi-platform App UI"
+                x:Name="dailyBudgetLabel"
+                Text=""
                 SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
+                SemanticProperties.Description="Displays the currently available daily budget"
+                FontSize="20"
+                HorizontalOptions="Center" />
+            <Label
+                Text="Currently available period budget:"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="28"
+                HorizontalOptions="Center" />
+
+            <Label
+                x:Name="periodBudgetLabel"
+                Text=""
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Displays the currently available period-budget"
+                FontSize="20"
                 HorizontalOptions="Center" />
 
             <Button
